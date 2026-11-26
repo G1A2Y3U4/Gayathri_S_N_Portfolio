@@ -1,0 +1,269 @@
+
+/* ==============================
+   PROJECTS SECTION
+============================== */
+
+.projects-section {
+  padding: 50px 8%;
+  background: #f5f2f2;
+}
+
+.projects-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+
+/* ==============================
+   SECTION HEADING
+============================== */
+
+.projects-heading {
+  max-width: 650px;
+  margin: 0 auto 55px;
+  text-align: center;
+}
+
+.projects-subtitle {
+  display: inline-block;
+  color: #8429f5;
+  font-size: 18px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.projects-heading h2 {
+  font-family: var(--heading-font);
+  color: var(--heading-color);
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.projects-heading p {
+  color: var(--text-color);
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+
+/* ==============================
+   PROJECT GRID
+============================== */
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+}
+
+
+/* ==============================
+   PROJECT CARD
+============================== */
+
+.project-card {
+  padding: 32px;
+  background: #faf9fd;
+  border: 1px solid #eee8f8;
+  border-radius: 16px;
+
+  display: flex;
+  flex-direction: column;
+
+  transition: transform 0.3s ease,
+              box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 15px 35px rgba(80, 40, 120, 0.10);
+}
+
+
+/* ==============================
+   CARD TOP
+============================== */
+
+.project-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.project-icon {
+  width: 52px;
+  height: 52px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #f0e7ff;
+  color: #8429f5;
+
+  border-radius: 13px;
+}
+
+.project-icon svg {
+  width: 26px;
+  height: 26px;
+}
+
+
+/* ==============================
+   PROJECT STATUS
+============================== */
+
+.project-status {
+  padding: 7px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.project-status.completed {
+  color: #18794e;
+  background: #e7f7ef;
+}
+
+.project-status.development {
+  color: #7952a5;
+  background: #f0e7ff;
+}
+
+
+/* ==============================
+   PROJECT INFORMATION
+============================== */
+
+.project-category {
+  color: #8429f5;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.project-card h3 {
+  color: var(--heading-color);
+  font-family: var(--heading-font);
+  font-size: 23px;
+  margin: 12px 0;
+}
+
+.project-description {
+  color: var(--text-color);
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 22px;
+}
+
+
+/* ==============================
+   TECHNOLOGY TAGS
+============================== */
+
+.project-technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin-bottom: 25px;
+}
+
+.project-technologies span {
+  background: #ffffff;
+  border: 2px solid #e9def7;
+  color: #65418b;
+
+  padding: 7px 11px;
+  border-radius: 6px;
+
+  font-size: 12px;
+  font-weight: 600;
+}
+
+
+/* ==============================
+   GITHUB LINKS
+============================== */
+
+.project-links {
+  border-top: 1px solid #e9e2f1;
+  padding-top: 20px;
+  margin-top: auto;
+}
+
+.project-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  color: #8429f5;
+  font-size: 14px;
+  font-weight: 600;
+
+  text-decoration: none;
+
+  transition: color 0.3s ease;
+}
+
+.project-links a:hover {
+  color: #7020d8;
+}
+
+.project-links .github-icon {
+  width: 19px;
+  height: 19px;
+  color: #8429f5;
+  fill: #8429f5;
+}
+
+.project-links .external-icon {
+  width: 15px;
+  height: 15px;
+  color: #8429f5;
+}
+
+
+/* ==============================
+   RESPONSIVE DESIGN
+============================== */
+
+@media (max-width: 768px) {
+
+  .projects-section {
+    padding: 75px 18px;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .projects-heading h2 {
+    font-size: 29px;
+  }
+
+  .project-card {
+    padding: 25px;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .projects-heading h2 {
+    font-size: 26px;
+  }
+
+  .project-card h3 {
+    font-size: 20px;
+  }
+
+  .project-description {
+    font-size: 13px;
+  }
+
+}

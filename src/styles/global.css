@@ -1,0 +1,103 @@
+
+/* =================================
+   GLOBAL STYLES
+================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+:root {
+  /* Theme Colors */
+  --primary-color: #8429f5;
+  --primary-hover: #7020d8;
+
+  --heading-color: #343f59;
+  --text-color: #777777;
+  --white-color: #ffffff;
+  --light-bg: #faf9fd;
+
+  /* Typography */
+  --heading-font: 'Poppins', sans-serif;
+  --body-font: 'Inter', sans-serif;
+
+  /* Layout */
+  --container-width: 1100px;
+}
+
+/* Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* HTML */
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
+/* Body */
+
+body {
+  font-family: var(--body-font);
+  background-color: var(--white-color);
+  color: var(--text-color);
+  overflow-x: hidden;
+}
+
+/* Common Container */
+
+.container {
+  width: 90%;
+  max-width: var(--container-width);
+  margin: 0 auto;
+}
+
+/* Headings */
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--heading-font);
+  color: var(--heading-color);
+}
+
+/* Links */
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Buttons */
+
+button {
+  font-family: var(--body-font);
+  cursor: pointer;
+  border: none;
+}
+
+/* Images */
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Selection */
+
+::selection {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+
+/* Accessibility */
+
+button:focus-visible,
+a:focus-visible {
+  outline: 3px solid var(--primary-color);
+  outline-offset: 4px;
+}
